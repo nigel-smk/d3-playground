@@ -1,3 +1,14 @@
+- make a bar graph!
+ - to demo adding styles (maybe data dependent colors?)
+
+- make random data generator?
+
+- make the bar graph with svg
+
+- make the dataset large to introduce scales
+
+
+
 
 # D3 Playground
 
