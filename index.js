@@ -1,23 +1,27 @@
 import style from './style.css'
 import { outerHTML as diffOuterHTML } from 'diffhtml'
+import { selectionDemo } from './demos/selections';
 
-const margin = {
-  top: 10,
-  right: 20,
-  bottom: 20,
-  left: 40
-};
+function registerDemo(id, func) {
+  document.getElementById(id).addEventListener("click", function() {
+    func();
+  })
+}
 
-let data = [ 5, 10 , 15, 20, 25 ];
+registerDemo("selections", selectionDemo);
 
-d3.select("body") // selects the body element jquery style
-  // .selectAll("p") // selects all p in the body
-  .data(data) // executes the following methods for each datum
-  .enter() // executes the following methods only on unbound data
-    // TODO how does update/enter/exit work? http://animateddata.co.uk/lab/d3enterexit/
-  .append("p") //
-  .text("New Paragraph");
-
+// let pSelection = bodySelection.selectAll("p"); // selects all p in the body
+// console.log('Paragraph Selection:');
+// console.log(pSelection);
 // debugger;
-let selection = d3.selectAll("p");
+
+// TODO how does update/enter/exit work? http://animateddata.co.uk/lab/d3enterexit/
+// selections extend arrays: https://bost.ocks.org/mike/selection/#subclass
 // TODO why is the selection nested? http://prcweb.co.uk/lab/selection
+// use modern web standards to build glorious data visualizations
+// TODO why do we need to select the body first? https://bost.ocks.org/mike/selection/#group
+
+
+// Gotchas
+// markup written in JS
+// Angular
