@@ -1,14 +1,34 @@
 import style from './style.css'
 import { outerHTML as diffOuterHTML } from 'diffhtml'
 import { selectionDemo } from './demos/selections';
+import { htmlBarChartDemo } from './demos/htmlBarChartDemo';
+import { svgBarChartDemo } from './demos/svgBarChartDemo';
+import { scaleDemo } from './demos/scaleDemo';
+import { transitionsDemo } from './demos/transitionsDemo';
 
-function registerDemo(id, func) {
-  document.getElementById(id).addEventListener("click", function() {
+let demos = [
+  selectionDemo,
+  htmlBarChartDemo,
+  svgBarChartDemo,
+  scaleDemo,
+  transitionsDemo
+];
+
+function registerDemo(func) {
+  let nav = document.getElementById('nav');
+  let newButton = document.createElement('button');
+  newButton.addEventListener("click", function() {
     func();
-  })
+  });
+  let textNode = document.createTextNode(func.name);
+
+  newButton.append(textNode);
+  nav.append(newButton);
 }
 
-registerDemo("selections", selectionDemo);
+demos.forEach(registerDemo);
+
+
 
 // let pSelection = bodySelection.selectAll("p"); // selects all p in the body
 // console.log('Paragraph Selection:');

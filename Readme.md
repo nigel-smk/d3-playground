@@ -1,14 +1,15 @@
+# D3 PowerHour
 
-# D3 Playground
+## Html Bar Chart
 
- Webpack hot reloading + Babel playground for messing with D3 components.
+- setting class and styles
+- passing larger datasets
 
-## Usage
+## Svg Bar Chart
 
-Clone the repo, tweak what you want and `npm start`.
+- must work around svg quirks
+- quick easy access to data points
+- manual scaling is not fun
 
----
-
-> [tjholowaychuk.com](http://tjholowaychuk.com) &nbsp;&middot;&nbsp;
-> GitHub [@tj](https://github.com/tj) &nbsp;&middot;&nbsp;
-> Twitter [@tjholowaychuk](https://twitter.com/tjholowaychuk)
+### Further Reading
+[https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html](friendly SVG Primer by a member of the SVG Working Group)

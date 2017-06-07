@@ -1,0 +1,20 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+svg {
+    outline: dashed thin grey;
+}
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;
+    margin-right: 5px;
+    background-color: teal;
+}
