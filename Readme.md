@@ -2,6 +2,8 @@
 
 ## Opening Slide
 - what is D3?
+  - js library for data visualizations
+  - fine grained control of html, svg, (and now canvas)
 - what are some alternatives?
   - Highchart.js
   - charts.js
@@ -22,6 +24,41 @@
   - more abstracted (working with 'marks' like bars or wedges)
   - no longer in development
  - D3 
+ 
+ ## Data
+ - arrays
+ - data loading helpers
+ 
+ ## Selections
+ - jquery style
+ - update, enter, exit
+ - run demo
+  - selecting an existing element (update)
+    - nested array (mention grouping)
+    - subclass of array
+    - standard HTMLDomElements
+  - selecting from an existing selection (update)
+    - parentNode
+      - useful for grouping
+      - selecting nothing?
+  - binding data
+    - same selection, except the array is of length 5 (undefined)
+    - has defined enter() and exit()
+  - enter selection
+    - these are the elements in the data, but not in the DOM
+    - array is filled with objects
+    - still no DOM elements
+    - __data__ values have been assigned
+      - key of data matched to key of element (currently index)
+  - append
+    - empty objects have been swapped out for domElements
+    - the data is still there, in the domElements
+      - it is bound!
+    - after next continue, note the paragraphs have appeared
+  - text
+    - now manipulating the dom elements more traitionally
+  - exit
+    - only defined elements are those that are being removed
 
 ## Html Bar Chart
 
