@@ -104,7 +104,47 @@
 - final note: the SVG primer is by a member of the SVG Working Group
 
 ## Transitions
-- how do transitions work?
+- **code**
+- randomNumber generator
+- domain based on dataset
+- also created scale for colors
+- appending button for some action
+  - note the event listener
+- first just update data
+  - yScale must be redefined
+  - colorscale must be redefined
+  - an update selection is made with new data
+    - new data is bound
+    - relevant attributes must be modified
+- then update data with transition
+- transitions use keyframe animations
+  - takes current setting and maps to given setting
+  - you can take more fine-grained control of the animation process
+  - note that animations will get interrupted if run in sequence
+    - can be queued
+
+## Axes
+- more advanced random number generator
+  - randomly chooses random distributions
+- using d3.min because the data has an undefined domain
+- padding is for bottom of svg
+- we are making a scatterplot
+
+- making the axis
+  - pass in the scale
+    - so the function knows the range of values
+  - pass in the orientation (where will the ticks go)
+  - pass in the ticks
+    - how many ticks do you want on your axis
+      - d3 will tune this decision for you
+  - a function is generated
+
+- creating the axis
+  - 'g' is an svg group
+  - look at the css briefly
+  - "call" calls a function, passing in the selection
+- test without transform
+- then with transform
 
 
 ## Axes
