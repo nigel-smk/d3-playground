@@ -59,11 +59,16 @@
     - now manipulating the dom elements more traitionally
   - exit
     - only defined elements are those that are being removed
+  - actually use the data
 
 ## Html Bar Chart
 
-- setting class and styles
+- look at the code
+  - note the css styling
+- run the demo
+  - voila!
 - passing larger datasets
+-  note the multiplication of the height. Trouble.
 
 ## Svg Bar Chart
 
