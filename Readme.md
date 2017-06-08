@@ -86,20 +86,22 @@
   - in this case we must do some math to find the appropriate x
   - D3 is at the mercy of svg spec, you must work around it
 - third run
-  - we can use the data in many places
+  - more data == wider chart
+  - we can use the data in many places like css
 
 ## Scales
 
 - **slide first**
-
-  
-
-- the SVG primer is by a member of the SVG Working Group
-
-- must work around svg quirks
-- quick easy access to data points
-- manual scaling is not fun
-
+- look at code
+  - scale created at 1-1
+  - define domain
+  - define range
+- demo run (will debug)
+  - see the scaling!
+- **back to code**
+ - lets scale our bar chart
+  - scale max
+- final note: the SVG primer is by a member of the SVG Working Group
 
 ## Transitions
 - how do transitions work?
