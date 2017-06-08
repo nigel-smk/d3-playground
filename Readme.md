@@ -122,6 +122,8 @@
   - you can take more fine-grained control of the animation process
   - note that animations will get interrupted if run in sequence
     - can be queued
+- **slides**
+  - there are other transition methods
 
 ## Axes
 - more advanced random number generator
@@ -146,7 +148,21 @@
 - test without transform
 - then with transform
 
+## Layouts
+- **slide**
 
-## Axes
+- defining our dataset
+  - from slack chat
+  - two lists
+  - one defining nodes, the other edges
+- note the use of category20 scale
 
-- generates svg
+- the force call takes only the dataset and the dimensions of the svg
+
+- then we create the edges and nodes independently
+  - the nodes get drag event listeners installed
+
+- then we define what happens on each tick
+  - the dataset gets recalculated, and the svg gets updated
+  
+## Thanks to Scott Murray
