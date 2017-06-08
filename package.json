@@ -24,5 +24,8 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0",
     "webpack-hot-middleware": "^2.2.0"
+  },
+  "dependencies": {
+    "probability-distributions": "^0.9.1"
   }
 }

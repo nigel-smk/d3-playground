@@ -5,13 +5,17 @@ import { htmlBarChartDemo } from './demos/htmlBarChartDemo';
 import { svgBarChartDemo } from './demos/svgBarChartDemo';
 import { scaleDemo } from './demos/scaleDemo';
 import { transitionsDemo } from './demos/transitionsDemo';
+import { axesDemo } from './demos/axesDemo';
+import { layoutsDemo } from './demos/layoutsDemo';
 
 let demos = [
   selectionDemo,
   htmlBarChartDemo,
   svgBarChartDemo,
   scaleDemo,
-  transitionsDemo
+  transitionsDemo,
+  axesDemo,
+  layoutsDemo
 ];
 
 function registerDemo(func) {

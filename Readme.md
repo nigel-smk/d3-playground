@@ -13,3 +13,11 @@
 
 ### Further Reading
 [https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html](friendly SVG Primer by a member of the SVG Working Group)
+
+## Transitions
+- how do transitions work?
+
+
+## Axes
+
+- generates svg
