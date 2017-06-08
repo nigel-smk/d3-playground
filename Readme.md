@@ -60,6 +60,9 @@
   - exit
     - only defined elements are those that are being removed
   - actually use the data
+  - note the chaining
+  
+  - open up the references
 
 ## Html Bar Chart
 
@@ -69,15 +72,34 @@
   - voila!
 - passing larger datasets
 -  note the multiplication of the height. Trouble.
+- **open next demo before slide next**
 
 ## Svg Bar Chart
+
+- now we're cooking with fire!
+- first run
+  - predefine the width and height of svg
+    - note resizing issue
+  - its upside down!
+    - go to slide, explain coords
+- second run 
+  - in this case we must do some math to find the appropriate x
+  - D3 is at the mercy of svg spec, you must work around it
+- third run
+  - we can use the data in many places
+
+## Scales
+
+- **slide first**
+
+  
+
+- the SVG primer is by a member of the SVG Working Group
 
 - must work around svg quirks
 - quick easy access to data points
 - manual scaling is not fun
 
-### Further Reading
-[https://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html](friendly SVG Primer by a member of the SVG Working Group)
 
 ## Transitions
 - how do transitions work?
