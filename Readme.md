@@ -1,5 +1,28 @@
 # D3 PowerHour
 
+## Opening Slide
+- what is D3?
+- what are some alternatives?
+  - Highchart.js
+  - charts.js
+  - trading more complex dev for more control
+- lets look at some cool visualizations
+
+## D(-3)
+- prefuse
+  - java based
+- flare
+  - flash (actionscript)
+- protovis
+  - by Bostock
+    - New York Times
+  - Jeff Heer
+  - Vadim Ogievetsky
+  - all from Stanford University's Stanford Visualization Group
+  - more abstracted (working with 'marks' like bars or wedges)
+  - no longer in development
+ - D3 
+
 ## Html Bar Chart
 
 - setting class and styles
